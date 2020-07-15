@@ -1,0 +1,1 @@
+This [Odin Project](https://www.theodinproject.com/courses/html-and-css/lessons/building-with-responsive-design?ref=lnav) consists of recreating the [TNW](https://thenextweb.com/) website, with a focus on responsiveness.
