@@ -21,7 +21,7 @@ a {
   color: inherit;
 }
 
-.clock, .share {
+.clock, .share, .tag span, .case span {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -60,12 +60,6 @@ body .wrapper {
 
 /* To aid development */
 
-/* Replace above with */
-
-body section {
-  background: #f6f6f6;
-}
-
 .alt1 {
   background: lightblue;
 }
@@ -74,9 +68,9 @@ body section {
   background: lightcoral;
 }
 
-/* article {
+.alt1 article, .alt2 article {
   background: lightgoldenrodyellow;
-} */
+}
 
 /* NAVIGATION */
 /* Business */
@@ -210,7 +204,7 @@ time {
 }
 /* LATEST NEWS */
 
-.latest-news .section-header, .latest-funding .section-header {
+.latest-news .section-header {
   padding: 90px 0 25px 0;
 }
 
@@ -259,6 +253,29 @@ time {
 
 /* LATEST FUNDING */
 
+.latest-funding {
+  padding-top: 90px;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 25px;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  color: #FF4422;
+  font-size: 17px;
+}
+
+.option a:hover {
+  color: black;
+}
+
+
 .latest-funding .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -268,6 +285,69 @@ time {
 .company {
   width: 270px;
   height: 267.667px;
+  position: relative;
+  display: grid;
+  align-content: start;
+  background: #fff9f8;
+  font-size: 12px;
+}
+
+.company .thumbnail {
+  width: 60px;
+  height: 60px;
+  background: aqua;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.company .name {
+  background: #FF4422;
+  color: white;
+  width: 100%;
+  height: 40px;
+}
+
+.company .name, .stat {
+  padding-left: 80px;
+  padding-top: 10px;
+}
+
+.stat {
+  background: #ffebe7;
+  height: 57px;
+}
+
+.company .name, .stat .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stat .type {
+  color: black;
+  opacity: 0.5;
+  line-height: 1.8;
+}
+
+.tags {
+  border-bottom: 1px solid #ffcdc2;
+}
+
+.tag span {
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -976px -976px;
+}
+
+.case span {
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -48px -48px;
+}
+
+.company .summary {
+  padding: 10px;
+  line-height: 2;
+}
+
+.source {
+  color: #555;
 }
 
 /* LATEST CATEGORY */
