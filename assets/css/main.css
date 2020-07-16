@@ -37,6 +37,10 @@ a {
   background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -880px -880px;
 }
 
+.article-tag {
+  text-transform: uppercase;
+}
+
 .section-header {
   color: #FF4422;
   font-size: 30px;
@@ -147,11 +151,7 @@ body .wrapper {
   padding: 20px;
 }
 
-.article-tag {
-  text-transform: uppercase;
-}
-
-.info-container {
+.main .info-container {
   position: absolute;
   bottom: 10px;
 }
@@ -168,7 +168,7 @@ body .wrapper {
   position: relative;
 }
 
-.logo, time, .info-container {
+.logo, time, .main .info-container {
   position: absolute;
 }
 
@@ -194,7 +194,7 @@ time {
 
 .runner-up {
   height: 50%;
-  background: url("../images/tnw.png") 0 0 no-repeat, linear-gradient(white, black);
+  background: url("../images/tnw.png") 0 0 no-repeat, linear-gradient(black, white, black);
   background-size: contain;
   position: relative;
 }
@@ -226,7 +226,7 @@ time {
 .thumb-desc .thumbnail {
   width: 270px;
   height: 135px;
-  background: linear-gradient(white, black);
+  background: linear-gradient(black, white, black);
 }
 
 .desc {
@@ -358,11 +358,76 @@ time {
   justify-items: center;
   gap: 20px;
   padding: 5px;
+  margin-top: 30px;
 }
 
 .category {
   width: 368px;
   height: 661.3px;
+}
+
+.category .section-header {
+  padding-bottom: 15px;
+}
+
+.category .info-container {
+  width: 368px;
+  height: 276px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  background: url("../images/tnw.png") 0 no-repeat, linear-gradient(black, white, black);
+  background-size: contain;
+  color: white;
+}
+
+.category .info-container .title {
+  font-size: 20px;
+}
+
+.category-late {
+  height: 96px;
+  padding: 0 0 10px 10px;
+  background: #fff4f2;
+  line-height: 1.3;
+  color: #FF4422;
+}
+
+.category-late .thumbnail {
+  width: 96px;
+  height: 96px;
+  float: right;
+  background: lightgrey;
+}
+
+.category-late .title a:hover {
+  text-decoration: #ffcdc2 underline;
+}
+
+.category-late .article-tag {
+  padding-top: 10px;
+}
+
+.category-articles {
+  word-wrap: break-word;
+  color: #555;
+  line-height: 1.5;
+}
+
+.category-article:hover {
+  color: black;
+}
+
+.category-article:before {
+  content: "\2022    ";
+  color: #FF4422;
+}
+
+.category-article {
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0;
 }
 
 /* LATEST DEALS */
