@@ -1,0 +1,156 @@
+/* GLOBAL */
+
+html, body {
+  width: calc(100vw - 12px);
+  height: 100vh;
+}
+
+/* *, *:before, *:after {
+  box-sizing: border-box;
+} */
+
+body .wrapper {
+  width: 1152px;
+  margin: 0 auto;
+}
+
+/* To aid development */
+
+.alt1 {
+  background: lightblue;
+}
+
+.alt2 {
+  background: lightcoral;
+}
+
+article {
+  background: lightgoldenrodyellow;
+}
+
+/* Replace above with */
+
+/* body section {
+  background: #f6f6f6;
+} */
+
+/* NAVIGATION */
+/* Business */
+
+.business {
+  height: 32px;
+  background: #131313; 
+}
+
+/* News */
+
+.news {
+  height: 48px;
+  background: white; /* REMOVE LATERRRRRRR */
+}
+
+/* HERO */
+
+.hero {
+  height: 58.59vh; /* 547.8px; */
+  padding: 4px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4px;
+}
+
+.runners-up {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.runner-up {
+  height: 50%;
+}
+
+/* LATEST NEWS */
+
+.latest-news {
+
+}
+
+.latest-news .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.ln {
+  width: 270px;
+  height: 227px;
+}
+
+.thumb-desc .thumbnail {
+  width: 270px;
+  height: 135px;
+  background: linear-gradient(to bottom right, green, rgba(0, 0, 255, 0.699));
+}
+
+/* LATEST FUNDING */
+
+.latest-funding .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.company {
+  width: 270px;
+  height: 267.667px;
+}
+
+/* LATEST CATEGORY */
+
+.latest-category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.category {
+  width: 368px;
+  height: 661.3px;
+}
+
+/* LATEST DEALS */
+
+.latest-deals {
+  
+}
+
+.latest-deals .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 5px;
+  padding: 5px 0;
+}
+
+.deal {
+  width: 270px;
+  height: 274.65px;
+}
+
+/* FOOTER */
+
+/* Communication */
+
+.communication {
+  height: 90.5px;
+  padding: 42px 0 28px 0;
+}
+
+/* Copyright */
+
+.copyright {
+  height: 19.5px;
+  padding: 39px 0;
+}
