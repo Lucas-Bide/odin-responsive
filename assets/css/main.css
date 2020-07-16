@@ -3,7 +3,20 @@
 html, body {
   width: calc(100vw - 12px);
   height: 100vh;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
 }
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783 */
 
 /* *, *:before, *:after {
   box-sizing: border-box;
@@ -39,14 +52,59 @@ article {
 
 .business {
   height: 32px;
-  background: #131313; 
+  background: #131313;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 13px;
 }
 
+.products, .contact {
+  display: flex;
+  gap: 10px;
+}
+
+.b-link {
+  color: hsla(0,0%,100%,.6);
+}
+
+.b-link:hover {
+  color: #fff;
+}
 /* News */
 
 .news {
   height: 48px;
   background: white; /* REMOVE LATERRRRRRR */
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.news-categories {
+  display: flex;
+  gap: 10px;
+}
+
+.n-link {
+  text-transform: uppercase;
+  font-family: 'Ropa Sans', sans-serif; /* Using Ropa Sans as a free alternative to Shentox */
+  color: #aaaaaa;
+  padding: 0 10px;
+}
+
+.n-link:hover {
+  color: black;
+}
+
+.search {
+  height: 48px;
+  width: 48px;
+  padding: 16px 16px;
+  border-left: 1px solid #eee;
 }
 
 /* HERO */
