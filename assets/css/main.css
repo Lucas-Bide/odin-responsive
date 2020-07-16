@@ -21,7 +21,7 @@ a {
   color: inherit;
 }
 
-.clock, .share, .tag span, .case span {
+.clock, .share, .tag span, .case span, .forum {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -58,7 +58,7 @@ a {
 } */
 
 body .wrapper {
-  width: 1152px;
+  width: 1192px;
   margin: 0 auto;
 }
 
@@ -432,10 +432,6 @@ time {
 
 /* LATEST DEALS */
 
-.latest-deals {
-  
-}
-
 .latest-deals .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -445,17 +441,102 @@ time {
 }
 
 .deal {
+  width: 294px;
+  height: 319px;
+}
+
+.deal-desc .title {
+  font-size: 17px;
+}
+
+.prev-price {
+  text-decoration: line-through;
+  vertical-align: text-bottom;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.deal-desc span {
+  color: black;
+  font-size: 15px;
+}
+.deal-desc .thumbnail {
   width: 270px;
-  height: 274.65px;
+  height: 201px;
+  background: linear-gradient(black, white, black);
 }
 
 /* FOOTER */
 
+footer > * {
+  box-sizing: content-box;
+}
+
 /* Communication */
 
-.communication {
+.communication {;
   height: 90.5px;
   padding: 42px 0 28px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #aaa;
+  background: #131313;
+}
+
+.communication .contact {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.communication .contact li:hover {
+  color: white;
+}
+
+.communication .social {
+  display: flex;
+  gap: 10px;
+}
+
+.communication .social li {
+  width: 40px;
+  height: 40px;
+  background: #333333;
+  border-radius: 100%;
+  border: 2px solid #333333;
+}
+
+.communication .social li:hover {
+  background: black;
+}
+
+.fb .forum{
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -272px -272px;
+}
+
+.tw .forum{
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -1024px -1024px;
+}
+
+.yt .forum{
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -1280px -1280px;
+}
+
+.insta .forum{
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -416px -416px;
+}
+
+.pt .forum{
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -672px -672px;
+}
+
+.rss .forum{
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -816px -816px;
+}
+
+.mail .forum{
+  background: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") -576px -576px;
 }
 
 /* Copyright */
@@ -463,4 +544,7 @@ time {
 .copyright {
   height: 19.5px;
   padding: 39px 0;
+  background: black;
+  color: #aaa;
+  text-align: center;
 }
